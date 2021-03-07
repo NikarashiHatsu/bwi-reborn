@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      letterSpacing: {
+        ultraWide: '.2em',
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -14,10 +18,15 @@ module.exports = {
       gray: colors.trueGray,
       red: colors.red,
       blue: colors.blue,
+    },
+    fontFamily: {
+      merriweather: ['Merriweather']
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      translate: ['group-hover']
+    },
   },
   plugins: [],
 }
