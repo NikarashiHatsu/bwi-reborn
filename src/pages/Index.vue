@@ -120,7 +120,7 @@ export default {
     data() {
         return {
             index: 0,
-            text: '',
+            text: 'Terbuka',
             texts: [
                 'Terpercaya',
                 'Cepat',
