@@ -92,7 +92,7 @@ let works = [
         websiteLink: '',
     },
     {
-        backgroundImage: images.simrs,
+        backgroundImage: images.spmhs,
         title: 'Spmhs',
         description: 'Aplikasi Surat Pengantar Mahasiswa Universitas Swadaya Gunung Jati.',
         googlePlay: false,

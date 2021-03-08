@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       letterSpacing: {
         ultraWide: '.2em',
-      }
+      },
+      transitionProperty: {
+        'height': 'height',
+      },
     },
     colors: {
       transparent: 'transparent',
