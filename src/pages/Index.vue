@@ -1,6 +1,15 @@
 <template>
     <div class="w-screen h-screen p-8 overflow-hidden bg-gray-800 font-merriweather">
-        <div class="relative flex items-center justify-between w-full h-full bg-gray-900">
+        <div class="relative flex items-center justify-between w-full h-full bg-gray-900 shadow-2xl">
+            <div class="absolute top-0 z-20 flex justify-between w-full">
+                <router-link class="p-6 text-gray-200 transition-colors duration-300 ease-in-out hover:text-red-500" to="tentang">
+                    Tentang
+                </router-link>
+                <router-link class="p-6 text-gray-200 transition-colors duration-300 ease-in-out hover:text-blue-500" to="portfolio">
+                    Portfolio
+                </router-link>
+            </div>
+            
             <!-- Particles -->
             <div class="absolute grid w-full h-full grid-cols-2">
                 <div class="relative flex items-center h-full">
@@ -8,7 +17,7 @@
                 </div>
                 <div class="relative flex items-center h-full">
                     <img src="../assets/dots.png" class="absolute ml-8 -mt-4" width="550" height="550" />
-                    <div class="absolute bottom-0 flex flex-col w-40 -left-20">
+                    <div class="absolute bottom-0 flex flex-col w-20 sm:w-40 -left-10 sm:-left-20">
                         <div class="w-full h-0.5 bg-gray-600"></div>
                         <div class="w-full h-0.5 bg-gray-600 mt-2"></div>
                         <div class="w-full h-0.5 bg-gray-600 mt-2"></div>
@@ -75,7 +84,7 @@
             </div>
             
             <!-- About -->
-            <router-link to="tentang" class="relative flex items-center justify-end w-48 px-3 py-4 -ml-4 overflow-hidden text-white border border-gray-100 group focus:outline-none">
+            <router-link to="tentang" class="relative items-center justify-end hidden w-48 px-3 py-4 -ml-4 overflow-hidden text-white border border-gray-100 sm:flex group focus:outline-none">
                 <div class="absolute right-0 w-full h-full transition-transform duration-300 ease-in-out transform -translate-x-full bg-gray-100 group-hover:translate-x-0"></div>
                 <div class="absolute z-10 w-5/12 -left-4">
                     <div class="absolute top-0 right-0 w-full transition-colors duration-300 ease-in-out border-t border-gray-100 group-hover:border-red-500"></div>
@@ -89,16 +98,16 @@
             </router-link>
             
             <!-- Main -->
-            <div class="flex flex-col text-center">
+            <div class="flex flex-col mx-auto text-center sm:mx-0">
                 <img src="../assets/logo.png" height="50" class="h-8 mx-auto">
                 <p class="my-2 text-gray-100">itu</p>
-                <p class="z-10 mt-6 text-5xl font-bold text-gray-100 uppercase tracking-ultraWide">
+                <p class="z-10 mt-6 text-2xl font-bold text-gray-100 uppercase tracking-ultraWide md:text-4xl lg:text-5xl">
                     {{ text }}
                 </p>
             </div>
 
             <!-- Works -->
-            <router-link to="portfolio" class="relative flex items-center justify-start w-48 px-3 py-4 -mr-4 overflow-hidden text-white border border-gray-100 group focus:outline-none">
+            <router-link to="portfolio" class="relative items-center justify-start hidden w-48 px-3 py-4 -mr-4 overflow-hidden text-white border border-gray-100 sm:flex group focus:outline-none">
                 <div class="absolute right-0 w-full h-full transition-transform duration-300 ease-in-out transform translate-x-full bg-gray-100 group-hover:translate-x-0"></div>
                 <div class="absolute z-10 w-5/12 -right-4">
                     <div class="absolute top-0 left-0 w-full transition-colors duration-300 ease-in-out border-t border-gray-100 group-hover:border-blue-500"></div>
