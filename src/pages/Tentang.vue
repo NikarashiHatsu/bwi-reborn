@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen bg-gray-900 font-merriweather">
+    <div class="w-full h-screen bg-gray-900 font-merriweather">
         <div class="relative grid w-full h-full grid-flow-row grid-cols-12 gap-0 p-6 md:gap-9">
             <!-- Logo -->
             <div class="fixed top-0 right-0 z-50 flex items-center m-6">
@@ -24,7 +24,7 @@
                     <div class="w-32 h-8 bg-gray-600"></div>
                     <img src="../assets/triangle-down.png" class="absolute -bottom-10 -right-0" />
                 </div>
-                <p style="text-underline-position: under;" class="text-3xl leading-relaxed text-gray-200 underline sm:text-5xl sm:leading-loose">
+                <p style="text-underline-position: under;" class="mb-6 text-3xl leading-relaxed text-gray-200 underline sm:text-5xl xl:leading-loose 2xl:text-7xl 2xl:leading-loose sm:leading-loose md:mb-0">
                     Hadir Memenuhi Kebutuhan <span class="inline md:hidden"><br /></span> Organisasi Anda.
                 </p>
             </div>
@@ -60,9 +60,9 @@
                 <div class="absolute hidden w-full h-full -mt-4 -ml-4 border border-gray-600 md:block"></div>
                 <div class="absolute hidden h-full -mt-4 border border-r border-gray-600 md:block left-1/2"></div>
                 <div class="absolute hidden w-16 h-4 -mt-8 -ml-8 bg-red-500 md:block left-1/2 top-1/2"></div>
-                <div class="absolute w-4 h-16 -ml-2 bg-red-500 left-1/2 top-1/2"></div>
+                <div class="absolute w-4 h-16 -ml-2 bg-red-500 md:hidden left-1/2 top-1/2"></div>
 
-                <div class="flex flex-col items-center col-span-2 border-b border-gray-600 pb-14 md:pb-0 md:col-span-1">
+                <div class="flex flex-col items-center col-span-2 border-b border-gray-600 md:border-b-0 pb-14 md:pb-0 md:col-span-1">
                     <p class="text-2xl leading-loose text-center text-gray-200">
                         Strategi<br />Digital
                     </p>
@@ -72,7 +72,7 @@
                         <li class="mb-4 text-gray-200">UI/UX</li>
                     </ol>
                 </div>
-                <div class="flex flex-col items-center col-span-2 pt-12 md:col-span-1">
+                <div class="flex flex-col items-center col-span-2 pt-12 md:pt-0 md:col-span-1">
                     <p class="text-2xl leading-loose text-center text-gray-200 w-">
                         Pengembangan<br />Digital
                     </p>
@@ -94,6 +94,7 @@
                 Partner kerja yang memiliki keterampilan <br />untuk mengubah ide menjadi sebuah produk jadi.
             </p>
 
+            <!-- TODO: Buat ke bentuk JSON -->
             <div class="relative grid w-full max-w-screen-md grid-flow-row grid-cols-2 p-4 mt-16 lg:grid-cols-4">
                 <div class="flex items-center justify-center col-span-1 py-6 border border-gray-600">
                     <img src="../assets/clients/polri.png" height="75" alt="Kepolisian Republik Indonesia" />
@@ -180,6 +181,8 @@
             </p>
 
             <div class="flex flex-col w-full mt-16 md:flex-row">
+                <!-- TODO: Buat ke bentuk JSON -->
+                <!-- TODO: Buat imagenya clickable (mobile) atau hover (pc), tampilin nama sama jabatan doang -->
                 <div class="grid w-full grid-flow-row grid-cols-3 md:w-1/2 md:grid-cols-2">
                     <div class="col-span-1 aspect-w-1 aspect-h-1">
                         <img src="../assets/team/yono_maulana.png" alt="Yono Maulana S.Kom.,MM.,MPM.,ICTPM.,CMA" class="w-full h-full" />
