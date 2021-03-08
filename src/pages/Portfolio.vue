@@ -9,35 +9,26 @@
                 <img src="../assets/logo.png" alt="Logo BWI" class="h-6" />
             </router-link>
         </div>
-        
-        <!-- <div class="fixed top-0 right-0 z-20 sections-menu">
-            <span
-                class="w-4 h-4 bg-gray-100"
-                v-bind:class="{active: activeSection == index}"
-                v-on:click="scrollToSection(index)"
-                v-for="(offset, index) in offsets"
-                v-bind:key="index">
-            </span>
-        </div> -->
-        <div class="fixed top-0 right-0 z-50 hidden mt-3 mr-8 sm:block">
+
+        <div class="fixed top-0 right-0 z-50 mt-3 mr-4 sm:mr-8">
             <div class="flex flex-row items-center justify-end text-gray-300 cursor-pointer " v-for="(work, index) in works" :key="index">
-                <p :class="{'text-gray-100 font-bold': activeSection == index}" class="mr-4 -mb-3 tracking-widest text-right uppercase">{{ work.title }}</p>
-                <div class="relative flex flex-col justify-center h-10 mt-3">
-                    <div class="absolute top-0 w-1 h-1 bg-gray-400 rounded-full"></div>
-                    <div :class="activeSection == index ? 'h-4' : 'h-1'" class="w-1 duration-300 ease-in-out bg-gray-200 rounded transition-height transform-gpu"></div>
-                    <div class="absolute bottom-0 w-1 h-1 bg-gray-400 rounded-full"></div>
+                <p :class="{'text-gray-100 font-bold': activeSection == index}" class="hidden mr-4 -mb-3 tracking-widest text-right uppercase sm:block">{{ work.title }}</p>
+                <div class="relative flex flex-col justify-center h-6 mt-0 sm:h-10 sm:mt-3">
+                    <div class="absolute top-0 hidden w-1 h-1 bg-gray-400 rounded-full sm:block"></div>
+                    <div :class="activeSection == index ? 'h-4 opacity-100' : 'h-1 opacity-50'" class="w-1 transition-all duration-300 ease-in-out bg-gray-200 rounded transform-gpu"></div>
+                    <div class="absolute bottom-0 hidden w-1 h-1 bg-gray-400 rounded-full sm:block"></div>
                 </div>
             </div>
         </div>
-        
+
         <div class="flex flex-col min-h-screen">
             <section class="relative flex flex-col justify-center w-full h-screen" v-for="(work, key) in works" :key="key">
                 <img :src="work.backgroundImage" class="absolute top-0 left-0 object-cover w-full h-full" :alt="work.title" />
                 <div class="absolute top-0 left-0 z-10 object-cover w-full h-full bg-gray-900 opacity-50"></div>
 
                 <div class="relative z-20 p-8">
-                    <p class="text-5xl font-bold text-gray-200 uppercase tracking-ultraWide">{{ work.title }}</p>
-                    <p class="mt-6 tracking-wide text-gray-200">{{ work.description }}</p>
+                    <p class="text-5xl font-bold leading-tight text-gray-200 uppercase tracking-ultraWide">{{ work.title }}</p>
+                    <p class="mt-6 leading-loose tracking-wide text-gray-200">{{ work.description }}</p>
                 </div>
             </section>
         </div>
