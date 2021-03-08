@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <img src="../assets/dylan-gillis-KdeqA3aTnBY-unsplash 1.png" class="object-cover w-full h-screen" />
+        <img src="../assets/dylan-gillis-KdeqA3aTnBY-unsplash.png" class="object-cover w-full h-screen" />
         
         <div class="flex flex-col items-center w-full min-h-screen pb-0 bg-gray-900 md:pb-16">
             <p class="mt-40 text-center text-gray-200">
@@ -205,7 +205,7 @@
                 </div>
                 <div class="flex flex-col-reverse w-full md:w-1/2">
                     <div class="w-aspect-2 h-aspect-1">
-                        <img src="../assets/teamwork.png" alt="Teamwork" class="w-full h-full">
+                        <img :src="meetingImage" alt="Teamwork" class="w-full h-full">
                     </div>
                     <div class="flex flex-col items-start h-full p-8 md:items-center md:flew-row md:flex-row w-aspect-2">
                         <p class="text-lg text-gray-200 md:text-base">Kunjungi Kami</p>
@@ -240,7 +240,14 @@
 </template>
 
 <script>
+    import images from '../database/images'
+
     export default {
-        name: 'Tentang'
+        name: 'Tentang',
+        data() {
+            return {
+                meetingImage: images.meeting,
+            }
+        }
     }
 </script>

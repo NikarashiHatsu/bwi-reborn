@@ -3,6 +3,7 @@ import cbt from '../assets/portfolio/cbt.webp'
 import dumasPresisi from '../assets/portfolio/dumasPresisi.webp'
 import eauditBnn from '../assets/portfolio/eauditBnn.webp'
 import eSaberPungli from '../assets/portfolio/eSaberPungli.webp'
+import meeting from '../assets/dylan-gillis-KdeqA3aTnBY-unsplash.png'
 import ruangDosen from '../assets/portfolio/ruangDosen.webp'
 import panenRaya from '../assets/portfolio/panenRaya.webp'
 import pemira from '../assets/portfolio/pemira.webp'
@@ -16,6 +17,7 @@ let images = {
     dumasPresisi: dumasPresisi,
     eauditBnn: eauditBnn,
     eSaberPungli: eSaberPungli,
+    meeting: meeting,
     ruangDosen: ruangDosen,
     panenRaya: panenRaya,
     pemira: pemira,
